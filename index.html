@@ -21,6 +21,16 @@
     />
   </head>
   <body>
+    <!-- Start scroll btn -->
+    <a class="arrow-parent" href="#"><i class="fa-solid fa-chevron-up fa-2x"></i></a>
+    <!-- End scroll btn -->
+    <!-- Start Loading Screen -->
+    <div class="loading-area">
+      <span class="loader">Loading...</span>
+      <span class="loadanimate1"></span>
+      <span class="loadanimate2"></span>
+    </div>
+    <!-- End Loading Screen -->
     <!-- Start Home -->
     <section class="home" id="home">
       <div class="overlay">
@@ -31,13 +41,13 @@
             </a>
             <nav>
               <i class="datalist fa-solid fa-bars"></i>
-              <ul class="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <ul class="linked-list  links">
+                <li class="Home active"><a href="#home">Home</a></li>
+                <li class="Services"><a href="#services">Services</a></li>
+                <li class="Portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li class="About"><a href="#about">About</a></li>
+                <li class="Pricing"><a href="#pricing">Pricing</a></li>
+                <li class="Contact"><a href="#contact">Contact</a></li>
               </ul>
               <span></span>
               <i class="home-ico-search fas fa-search"></i>
@@ -47,23 +57,23 @@
         <div class="layer-text">
           <h2>
             Hello World! <br />
-            We Are Kasper We Make Art.
+            <span id="demo"></span>
           </h2>
           <p>
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
             Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
             Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem.
-            Mauris blandit aliquet elit, eget tincidunt.
-          </p>
+            Mauris blandit aliquet elit, eget tincidunt.</p>
         </div>
         <div class="arrow">
           <i class="arrow-icon fas fa-angle-left change-background fa-2x"></i>
           <i class="arrow-icon fas fa-angle-right change-background fa-2x"></i>
         </div>
         <div class="bullets">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="1"></span>
+          <span class="2"></span>
+          <span class="3"></span>
+          <span class="4"></span>
         </div>
       </div>
     </section>
@@ -521,5 +531,9 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <script src="js/typed.umd.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

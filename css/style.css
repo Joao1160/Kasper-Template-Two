@@ -1,11 +1,19 @@
 /* Home */
 .home {
   background-color: #1f2021;
-  background-image: url(../images/landing.jpg);
+  background-image: url(../images/landing1.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  transition: Transform .5s;
+  transition: background-color 1s;
+
 }
 header .container {
   height: 100px;
@@ -33,7 +41,7 @@ header .container nav {
   z-index: 1;
   position: relative;
 }
-header .container nav ul {
+header .container nav ul.links {
   display: flex;
 }
 header .container nav ul li a {
@@ -43,7 +51,7 @@ header .container nav ul li a {
   transition: color 0.5s;
   transition: border-bottom 0.5s;
 }
-header .container nav ul li:first-child a {
+header .container nav ul li.active a {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
 }
@@ -67,6 +75,9 @@ header .container nav .home-ico-search {
   visibility: hidden;
   opacity: 0;
 }
+ul.block {
+  display: flex;
+}
 @media (max-width: 768px) {
   .datalist {
     position: relative;
@@ -82,14 +93,14 @@ header .container nav .home-ico-search {
   }
   header .container nav ul.links {
     display: none;
+  }
+
+  ul.block {
+    display: block;
     position: absolute;
     background-color: rgba(2, 28, 35, 0.7);
     bottom: -250px;
     left: -150px;
-  }
-
-  .datalist:hover + ul.links {
-    display: block;
   }
   header .container nav ul li {
     display: block;
@@ -204,9 +215,9 @@ header .container nav .home-ico-search {
 .home .arrow .arrow-icon:hover {
   transform: scale(1.4);
 }
-@media (max-width: 768px) {
-  .home .arrow {
-    display: none;
+@media (max-width: 500px) {
+  .home .arrow .arrow-icon {
+    margin: 0;
   }
 }
 .bullets {
@@ -224,7 +235,7 @@ header .container nav .home-ico-search {
   border-radius: 50%;
   transition: all 0.5s;
 }
-.bullets span:nth-child(2) {
+.bullets span:nth-child(1) {
   border: 0;
   background-color: var(--main-color);
 }
