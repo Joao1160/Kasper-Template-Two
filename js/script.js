@@ -73,7 +73,7 @@ $(document).ready(function(){
         var counter = 1
     }
     $(".home").css({
-        backgroundImage: `url(../images/landing${counter}.jpg)`
+        backgroundImage: `url(images/landing${counter}.jpg)`
     })
     $(".home .bullets span").eq(counter-1).css({
         border:"0",
@@ -97,7 +97,7 @@ $(document).ready(function(){
             counter += 1
         }
         $(".home").css({
-            backgroundImage: `url(../images/landing${counter}.jpg)`
+            backgroundImage: `url(images/landing${counter}.jpg)`
         })
         $(".home .bullets span").eq(counter-1).css({
             border:"0",
@@ -119,7 +119,7 @@ $(document).ready(function(){
             counter -= 1
         }
         $(".home").css({
-            backgroundImage: `url(../images/landing${counter}.jpg)`
+            backgroundImage: `url(images/landing${counter}.jpg)`
         })
         $(".home .bullets span").eq(counter-1).css({
             border:"0",
@@ -137,7 +137,7 @@ $(document).ready(function(){
         counter = parseInt(localStorage.getItem("counter"))
 
         $(".home").css({
-            backgroundImage: `url(../images/landing${$(this).attr("class")}.jpg)`
+            backgroundImage: `url(images/landing${$(this).attr("class")}.jpg)`
         })
         $(".home .bullets span").eq($(this).attr("class")-1).css({
             border:"0",
