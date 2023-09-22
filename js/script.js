@@ -165,6 +165,5 @@ var typed = new Typed('#demo', {
 
 
 $(window).on("load",function(){
-    $(".loading-area").fadeOut(6000)
-    $(".loading-area").fadeOut("slow")
+    $(".loading-area").fadeOut(3000)
 })
